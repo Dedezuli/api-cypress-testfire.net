@@ -22,3 +22,13 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run e2e
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v1.0.7
+        with:
+          # Artifact name
+          name: github-page
+          # Path of the directory containing the static assets.
+          path: cypress/index.html
+          # Duration after which artifact will expire in days.
+          retention-days: 1
