@@ -30,6 +30,6 @@ jobs:
           # Artifact name
           name: github-page
           # Path of the directory containing the static assets.
-          path: cypress/index.html
+          path: cypress/
           # Duration after which artifact will expire in days.
           retention-days: 1
