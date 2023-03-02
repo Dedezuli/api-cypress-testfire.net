@@ -15,7 +15,7 @@ describe('Login Status', () => {
   it('User check session(login) of specific user => if = TRUE', () => {
     cy.api({
       method: 'GET',
-      url: 'api/login',
+      url: 'api/logins',
       failOnStatusCode: false,
       headers: {
         Authorization: 'Bearer ' + accessToken,
